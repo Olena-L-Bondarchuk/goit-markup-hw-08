@@ -1,5 +1,11 @@
 .header {
-  border-bottom: 1px solid #ececec;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  // desktop
+  @media screen and (min-width: 1200px) {
+    border-bottom: 1px solid #ececec;
+  }
 
   &-container {
     display: flex;
@@ -9,5 +15,13 @@
 }
 
 .logo-header {
-  margin-right: 93px;
+  //tablet
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  // desktop
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }

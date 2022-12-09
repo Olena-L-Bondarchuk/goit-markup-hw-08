@@ -5,10 +5,35 @@
 
   &-container {
     display: flex;
-    justify-content: left;
-    align-items: baseline;
-    gap: 70px;
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+
+    // desktop
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+
+    // desktop
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      text-align: left;
+      align-items: baseline;
+      gap: 70px;
+    }
   }
+
+  // &__contacts-thumb {
+  //   margin-bottom: 60px;
+  // }
+
+  // &__join-thumb {
+  //   margin-bottom: 60px;
+  // }
+
   &-text {
     font-weight: 700;
     font-size: calc(16 / 14);
@@ -16,8 +41,8 @@
     color: var(--secondary-text-color);
     margin-bottom: 20px;
   }
+}
 
-  .logo--footer {
-    margin-bottom: 20px;
-  }
+.logo--footer {
+  margin-bottom: 28px;
 }

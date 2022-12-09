@@ -3,8 +3,19 @@
   align-items: center;
 
   &__list {
-    display: flex;
-    gap: 50px;
+    display: none;
+
+    // tablet
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 50px;
+    }
+
+    // desktop
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      gap: 50px;
+    }
   }
 
   &__item {

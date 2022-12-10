@@ -70,12 +70,12 @@
     <!-- Main section -->
     <main>
       <!-- Hero section -->
-      <!-- <section class="hero section">
+      <section class="hero section">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="btn" data-modal-open>Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
       <!-- Preference section -->
       <section class="section">
         <div class="preference container">
@@ -129,16 +129,21 @@
         </div>
       </section>
       <!-- Examples section -->
-      <!-- <section class="section examples">
+      <section class="section examples">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="examples__list list">
             <li class="examples__thumb">
               <img
-                src="./images/studia/img-1.jpg"
+                srcset="
+                  ./images/studia/examples/img_box1@1x.jpg 1x,
+                  ./images/studia/examples/img_box1@2x.jpg 2x
+                "
+                src=" ./images/studia/examples/img_box1@1x.jpg"
                 alt="набирають текст на клавіатурі перед планшетом"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <div class="examples__overlay">
                 <p class="examples__text">Десктопні додатки</p>
@@ -146,10 +151,15 @@
             </li>
             <li class="examples__thumb">
               <img
-                src="./images/studia/box-2.jpg"
+                srcset="
+                  ./images/studia/examples/img_box2@1x.jpg 1x,
+                  ./images/studia/examples/img_box2@2x.jpg 2x
+                "
+                src="./images/studia/examples/img_box2@1x.jpg"
                 alt="перед ноутбуком тримають в руках телефон"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <div class="examples__overlay">
                 <p class="examples__text">Мобільні додатки</p>
@@ -157,10 +167,15 @@
             </li>
             <li class="examples__thumb">
               <img
-                src="./images/studia/box-3.jpg"
+                srcset="
+                  ./images/studia/examples/img_box3@1x.jpg 1x,
+                  ./images/studia/examples/img_box3@2x.jpg 2x
+                "
+                src="./images/studia/examples/img_box3@1x.jpg"
                 alt="в руках тримають планшет і олівець"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <div class="examples__overlay">
                 <p class="examples__text">Дизайнерські рішення</p>
@@ -168,9 +183,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Team section -->
-      <!-- <section class="section team">
+      <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list list">
@@ -432,7 +447,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Regular custumers -->
       <section class="customers section">
         <div class="container">

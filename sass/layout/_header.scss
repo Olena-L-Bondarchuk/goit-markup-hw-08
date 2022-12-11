@@ -1,7 +1,4 @@
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-
   // desktop
   @media screen and (min-width: 1200px) {
     border-bottom: 1px solid #ececec;
@@ -11,6 +8,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (min-width: 480px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
   }
 }
 

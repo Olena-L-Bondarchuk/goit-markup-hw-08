@@ -134,49 +134,100 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="examples__list list">
             <li class="examples__thumb">
-              <img
-                srcset="
-                  ./images/studia/examples/img_box1@1x.jpg 1x,
-                  ./images/studia/examples/img_box1@2x.jpg 2x
-                "
-                src=" ./images/studia/examples/img_box1@1x.jpg"
-                alt="набирають текст на клавіатурі перед планшетом"
-                width="370"
-                height="294"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/studia/examples/img_box1@1x.webp 1x,
+                    ./images/studia/examples/img_box1@2x.webp 2x
+                  "
+                  type="image/webp"
+                  loading="lazy"
+                />
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/studia/examples/img_box1@1x.jpg 1x,
+                    ./images/studia/examples/img_box1@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  loading="lazy"
+                />
+                <img
+                  src=" ./images/studia/examples/img_box1@1x.jpg"
+                  alt="набирають текст на клавіатурі перед планшетом"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="examples__overlay">
                 <p class="examples__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="examples__thumb">
-              <img
-                srcset="
-                  ./images/studia/examples/img_box2@1x.jpg 1x,
-                  ./images/studia/examples/img_box2@2x.jpg 2x
-                "
-                src="./images/studia/examples/img_box2@1x.jpg"
-                alt="перед ноутбуком тримають в руках телефон"
-                width="370"
-                height="294"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/studia/examples/img_box2@1x.webp 1x,
+                    ./images/studia/examples/img_box2@2x.webp 2x
+                  "
+                  type="image/webp"
+                  loading="lazy"
+                />
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/studia/examples/img_box2@1x.jpg 1x,
+                    ./images/studia/examples/img_box2@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  loading="lazy"
+                />
+
+                <img
+                  src="./images/studia/examples/img_box2@1x.jpg"
+                  alt="перед ноутбуком тримають в руках телефон"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
               <div class="examples__overlay">
                 <p class="examples__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="examples__thumb">
-              <img
-                srcset="
-                  ./images/studia/examples/img_box3@1x.jpg 1x,
-                  ./images/studia/examples/img_box3@2x.jpg 2x
-                "
-                src="./images/studia/examples/img_box3@1x.jpg"
-                alt="в руках тримають планшет і олівець"
-                width="370"
-                height="294"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/studia/examples/img_box3@1x.webp 1x,
+                    ./images/studia/examples/img_box3@2x.webp 2x
+                  "
+                  type="image/webp"
+                  loading="lazy"
+                />
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/studia/examples/img_box3@1x.jpg 1x,
+                    ./images/studia/examples/img_box3@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  loading="lazy"
+                />
+
+                <img
+                  src="./images/studia/examples/img_box3@1x.jpg"
+                  alt="в руках тримають планшет і олівець"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
               <div class="examples__overlay">
                 <p class="examples__text">Дизайнерські рішення</p>
               </div>
@@ -191,27 +242,58 @@
           <ul class="team__list list">
             <li class="team__item">
               <picture>
-                <!-- desctop -->
+                <!-- desktop -->
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/studia/team/img1_lg@1x.webp 1x,
+                    ./images/studia/team/img1_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                  loading="lazy" />
                 <source
                   media="(min-width:1200px )"
                   srcset="
                     ./images/studia/team/img1_lg@1x.jpg 1x,
                     ./images/studia/team/img1_lg@2x.jpg 2x
-                  " />
+                  "
+                  type="image/jpg"
+                  loading="lazy" />
                 <!-- tablet -->
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/studia/team/img1_md@1x.webp 1x,
+                    ./images/studia/team/img1_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                  loading="lazy" />
                 <source
                   media="(min-width:768px )"
                   srcset="
                     ./images/studia/team/img1_md@1x.jpg 1x,
                     ./images/studia/team/img1_md@2x.jpg 2x
-                  " />
+                  "
+                  type="image/jpg"
+                  loading="lazy" />
                 <!-- phone -->
                 <source
                   media="(max-width:767px )"
                   srcset="
-                    ./images/studia/team/img1_sm@1x.jpg 1x,
-                    ./images/studia/team/img1_sm@2x.jpg 2x
-                  " />
+                    ./images/studia/team/img1_sm@1x.webp 1x,
+                    ./images/studia/team/img1_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                  loading="lazy" />
+
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/studia/team/img1_md@1x.jpg 1x,
+                    ./images/studia/team/img1_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  loading="lazy" />
                 <img
                   src="./images/studia/team/img1_sm@1x.jpg "
                   alt="співробітник-дизайнер"
@@ -279,27 +361,58 @@
             </li>
             <li class="team__item">
               <picture>
-                <!-- desctop -->
+                <!-- desktop -->
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/studia/team/img2_lg@1x.webp 1x,
+                    ./images/studia/team/img2_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                  loading="lazy" />
                 <source
                   media="(min-width:1200px )"
                   srcset="
                     ./images/studia/team/img2_lg@1x.jpg 1x,
                     ./images/studia/team/img2_lg@2x.jpg 2x
-                  " />
+                  "
+                  type="image/jpg"
+                  loading="lazy" />
                 <!-- tablet -->
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/studia/team/img2_md@1x.webp 1x,
+                    ./images/studia/team/img2_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                  loading="lazy" />
                 <source
                   media="(min-width:768px )"
                   srcset="
                     ./images/studia/team/img2_md@1x.jpg 1x,
                     ./images/studia/team/img2_md@2x.jpg 2x
-                  " />
+                  "
+                  type="image/jpg"
+                  loading="lazy" />
                 <!-- phone -->
                 <source
                   media="(max-width:767px )"
                   srcset="
-                    ./images/studia/team/img2_sm@1x.jpg 1x,
-                    ./images/studia/team/img2_sm@2x.jpg 2x
-                  " />
+                    ./images/studia/team/img2_sm@1x.webp 1x,
+                    ./images/studia/team/img2_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                  loading="lazy" />
+
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/studia/team/img2_md@1x.jpg 1x,
+                    ./images/studia/team/img2_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  loading="lazy" />
                 <img
                   src="./images/studia/team/img2_sm@1x.jpg "
                   alt="співробітник-дизайнер"
@@ -367,27 +480,58 @@
             </li>
             <li class="team__item">
               <picture>
-                <!-- desctop -->
+                <!-- desktop -->
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/studia/team/img3_lg@1x.webp 1x,
+                    ./images/studia/team/img3_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                  loading="lazy" />
                 <source
                   media="(min-width:1200px )"
                   srcset="
                     ./images/studia/team/img3_lg@1x.jpg 1x,
                     ./images/studia/team/img3_lg@2x.jpg 2x
-                  " />
+                  "
+                  type="image/jpg"
+                  loading="lazy" />
                 <!-- tablet -->
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/studia/team/img3_md@1x.webp 1x,
+                    ./images/studia/team/img3_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                  loading="lazy" />
                 <source
                   media="(min-width:768px )"
                   srcset="
                     ./images/studia/team/img3_md@1x.jpg 1x,
                     ./images/studia/team/img3_md@2x.jpg 2x
-                  " />
+                  "
+                  type="image/jpg"
+                  loading="lazy" />
                 <!-- phone -->
                 <source
                   media="(max-width:767px )"
                   srcset="
-                    ./images/studia/team/img3_sm@1x.jpg 1x,
-                    ./images/studia/team/img3_sm@2x.jpg 2x
-                  " />
+                    ./images/studia/team/img3_sm@1x.webp 1x,
+                    ./images/studia/team/img3_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                  loading="lazy" />
+
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/studia/team/img3_md@1x.jpg 1x,
+                    ./images/studia/team/img3_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  loading="lazy" />
                 <img
                   src="./images/studia/team/img3_sm@1x.jpg "
                   alt="співробітник-дизайнер"
@@ -455,27 +599,58 @@
             </li>
             <li class="team__item">
               <picture>
-                <!-- desctop -->
+                <!-- desktop -->
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/studia/team/img4_lg@1x.webp 1x,
+                    ./images/studia/team/img4_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                  loading="lazy" />
                 <source
                   media="(min-width:1200px )"
                   srcset="
                     ./images/studia/team/img4_lg@1x.jpg 1x,
                     ./images/studia/team/img4_lg@2x.jpg 2x
-                  " />
+                  "
+                  type="image/jpg"
+                  loading="lazy" />
                 <!-- tablet -->
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/studia/team/img4_md@1x.webp 1x,
+                    ./images/studia/team/img4_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                  loading="lazy" />
                 <source
                   media="(min-width:768px )"
                   srcset="
                     ./images/studia/team/img4_md@1x.jpg 1x,
                     ./images/studia/team/img4_md@2x.jpg 2x
-                  " />
+                  "
+                  type="image/jpg"
+                  loading="lazy" />
                 <!-- phone -->
                 <source
                   media="(max-width:767px )"
                   srcset="
-                    ./images/studia/team/img4_sm@1x.jpg 1x,
-                    ./images/studia/team/img4_sm@2x.jpg 2x
-                  " />
+                    ./images/studia/team/img4_sm@1x.webp 1x,
+                    ./images/studia/team/img4_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                  loading="lazy" />
+
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/studia/team/img4_md@1x.jpg 1x,
+                    ./images/studia/team/img4_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  loading="lazy" />
                 <img
                   src="./images/studia/team/img4_sm@1x.jpg "
                   alt="співробітник-дизайнер"
@@ -739,7 +914,6 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal" data-modal-window>
         <button class="modal-btn" data-modal-close>
-          -->
           <svg class="modal-icon" width="18" height="18">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
@@ -796,7 +970,6 @@
         </form>
       </div>
     </div>
-    -->
 
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">

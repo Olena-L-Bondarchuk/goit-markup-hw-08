@@ -492,8 +492,8 @@ body {
 .hero {
   text-align: center;
   margin: 0 auto;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding-top: 119px;
+  padding-bottom: 119px;
   background-color: rgba(47, 48, 58, 0.4);
   background-repeat: no-repeat;
   background-position: center;
@@ -1020,8 +1020,7 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
-  width: 528px;
-  padding: 40px 39px 41px;
+  padding: 40px;
   background-color: var(--primary-bgc);
   border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1037,10 +1036,20 @@ body {
           transition-timing-function: var(--transition-timing-function);
   /* Message */
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 .modal-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 8px;
+  right: 8px;
   padding: 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1060,6 +1069,12 @@ body {
   -webkit-transition: fill var(--transition-duration) var(--transition-timing-function);
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
+@media screen and (min-width: 1200px) {
+  .modal-btn {
+    top: 10px;
+    right: 10px;
+  }
+}
 .modal-btn:focus, .modal-btn:hover {
   fill: var(--accent-color);
 }
@@ -1069,10 +1084,15 @@ body {
 .modal-label {
   display: block;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: rgb(33, 33, 33);
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-label {
+    line-height: 1.15;
+  }
 }
 .modal-form-label {
   display: block;
@@ -1119,7 +1139,7 @@ body {
 .modal-form-icon {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 12px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-transition: fill var(--transition-duration) var(--transition-timing-function);
@@ -1133,8 +1153,8 @@ body {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1143,6 +1163,12 @@ body {
   -webkit-transition: outline var(--transition-duration);
   transition: outline var(--transition-duration);
   resize: none;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-message {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
 }
 .modal-form-message:focus {
   outline-color: var(--accent-color);
@@ -1157,15 +1183,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 7px;
+  gap: 8px;
   margin-bottom: 30px;
 }
 .modal-form-agreement-desc {
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-agreement-desc {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 .modal-form-agreement-link {
   color: var(--accent-color);

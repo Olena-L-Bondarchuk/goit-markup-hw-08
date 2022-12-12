@@ -39,9 +39,11 @@
     overflow: hidden;
   }
 
-  // &__link {
-  //   height: 100%;
-  // }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 
   &__title {
     color: var(--title-text-color);

@@ -27,13 +27,17 @@
     font-family: inherit;
 
     border-radius: 4px;
-    padding: 6px 22px;
+    padding: 7px 15px;
     min-height: 38px;
     border: none;
 
     transition-property: color, background-color, box-shadow;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
+
+    @media screen and (min-width: 480px) {
+      padding: 6px 22px;
+    }
   }
 
   &__item:hover,

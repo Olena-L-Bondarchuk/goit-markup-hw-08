@@ -1,11 +1,12 @@
 .modal {
+  width: 95%;
   position: absolute;
   top: 50%;
   left: 50%;
 
   transform: translateX(-50%) translateY(-50%);
 
-  padding: 40px;
+  padding: 17px;
 
   background-color: var(--primary-bgc);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -19,6 +20,7 @@
 
   @media screen and (min-width: 480px) {
     width: 450px;
+    padding: 40px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -28,22 +30,30 @@
   &-btn {
     position: absolute;
 
-    top: 8px;
-    right: 8px;
+    top: 4px;
+    right: 4px;
 
     padding: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background-color: var(--primary-bgc);
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
 
     transition: fill var(--transition-duration) var(--transition-timing-function);
+
+    @media screen and (min-width: 1200px) {
+      top: 8px;
+      right: 8px;
+
+      width: 30px;
+      height: 30px;
+    }
 
     @media screen and (min-width: 1200px) {
       top: 10px;
@@ -56,17 +66,25 @@
     fill: var(--accent-color);
   }
   &-form-group {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 480px) {
+      margin-bottom: 20px;
+    }
   }
 
   &-label {
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
     text-align: center;
     color: rgba(33, 33, 33, 1);
 
     margin-bottom: 12px;
+
+    @media screen and (min-width: 480px) {
+      font-size: 20px;
+    }
 
     @media screen and (min-width: 1200px) {
       line-height: calc(23 / 20);
@@ -94,8 +112,8 @@
 
   &-form-field {
     width: 100%;
-    height: 40px;
-    padding-left: 41px;
+    height: 35px;
+    padding-left: 33px;
     padding-right: 39px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -104,6 +122,11 @@
     outline-offset: -1px;
 
     transition: outline-color var(--transition-duration) var(--transition-timing-function);
+
+    @media screen and (min-width: 480px) {
+      height: 40px;
+      padding-left: 41px;
+    }
   }
 
   &-form-field:focus {
@@ -127,10 +150,10 @@
   &-form-message {
     display: block;
     width: 100%;
-    height: 120px;
-    padding: 12px 16px;
+    height: 110px;
+    padding: 10px 13px;
 
-    font-size: 14px;
+    font-size: 13px;
     line-height: calc(16 / 14);
     letter-spacing: 0.01em;
 
@@ -141,6 +164,12 @@
 
     transition: outline var(--transition-duration);
     resize: none;
+
+    @media screen and (min-width: 480px) {
+      font-size: 14px;
+      height: 120px;
+      padding: 12px 16px;
+    }
 
     @media screen and (min-width: 1200px) {
       font-size: 12px;
@@ -157,7 +186,11 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 480px) {
+      margin-bottom: 30px;
+    }
   }
 
   &-form-agreement-desc {
